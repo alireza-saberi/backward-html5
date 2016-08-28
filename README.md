@@ -12,3 +12,5 @@ In the first part,  it's simple :
 
 **Note:** All browsers render unknown elements inline, i.e. as if they had a display:inline CSS rule.
 So to support HTML5 elements for the older browser, you should style them as block level elements.
+
+For more accurate setting up, you can use the following [reset sheet](http://html5doctor.com/html-5-reset-stylesheet/) from Richard Clark
