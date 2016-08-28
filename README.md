@@ -14,3 +14,15 @@ In the first part,  it's simple :
 So to support HTML5 elements for the older browser, you should style them as block level elements.
 
 For more accurate setting up, you can use the following [reset sheet](http://html5doctor.com/html-5-reset-stylesheet/) from Richard Clark
+
+In the second part, IE ( < 9) is most trouble making browsers. THe solution is creating the element once (per page) in JavaScript  to teach IE ( <9 ) to style the element it doesn’t recognize; like `document.createElement("article");` 
+
+Remy Sharp has “minified” this script so-call `HTML5 SHIV` and hosted it on [Google Project Hosting](https://github.com/afarkas/html5shiv). If you like, you can even “hotlink” the script by pointing directly to the hosted version, like this:
+
+```<head>
+  <meta charset="utf-8" />
+  <title>My Weblog</title>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>```
